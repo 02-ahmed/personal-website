@@ -1,14 +1,18 @@
-import React from 'react'
+
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import AOS from 'aos';
+
+import 'aos/dist/aos.css'
 
 const Contact = () => {
+  AOS.init()
   return (
     <>
       <section id='contact'>
         <div className="container-fluid">
           <h3 className='text-center pt-5 pb-5'>CONTACT ME</h3>
           <div className="row ms-5 me-5">
-            <div className="col-md-6 ps-5 pe-5">
+            <div className="col-md-6 ps-5 pe-5" data-aos="zoom-in-right">
               <form action="">
                 <div className="row g-3">
                   <div className="col-md-6">
@@ -29,7 +33,7 @@ const Contact = () => {
                 </div>
               </form>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 mt-5 mt-md-0" data-aos="zoom-in-left">
               <div className="row g-4">
                 <div className="col-12">
                   <h5>Ahmed</h5>
