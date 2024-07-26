@@ -1,5 +1,5 @@
 
-import img from "../assets/images/profile-image.jpg"
+import img from "../assets/images/ahmedboabae.jpg"
 
 import { FaGithub, FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -35,7 +35,7 @@ const About = () => {
             </div>
             <div className="col-md-6 d-flex justify-content-center"  data-aos="fade-left">
               <div className="card " style={{maxHeight:"450px",maxWidth:"350px"}}>
-                  <img src={img} alt="" className='img-fluid'  />
+                  <img src={img} alt="Ahmed Boabae" className='img-fluid'  />
                   <div className="card-footer">
                     <ul className='list d-flex justify-content-around ps-0'>
                       <li className='list-group-item'><a href="https://x.com/_02ahmed" className='text-secondary'><FaTwitter fontSize={30}/></a></li>
