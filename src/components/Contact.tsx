@@ -1,66 +1,118 @@
-
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
-import AOS from 'aos';
-
-import 'aos/dist/aos.css'
+import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Contact = () => {
-  AOS.init()
+  AOS.init();
+
   return (
-    <>
-      <section id='contact'>
-        <div className="container-fluid">
-          <h3 className='text-center pt-5 pb-5'>CONTACT ME</h3>
-          <div className="row ms-5 me-5">
-            <div className="col-md-6 ps-5 pe-5" data-aos="zoom-in-right">
-              <form action="">
-                <div className="row g-3">
-                  <div className="col-md-6">
-                    <input type="text" className='form-control'  placeholder='Name'/>
+    <section id="contact" className="py-5">
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-lg-8 text-center">
+            <h2 className="mb-3">
+              <span className="emoji me-2">✨</span>
+              Let's Connect
+            </h2>
+            <p className="lead text-secondary mb-5">
+              Open to new opportunities and interesting collaborations
+            </p>
+          </div>
+        </div>
+
+        <div className="row justify-content-center">
+          <div className="col-lg-8">
+            <div className="contact-wrapper">
+              <div
+                className="contact-card"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                <div className="contact-header">
+                  <div className="gradient-circle">
+                    <span className="emoji">👋</span>
                   </div>
-                  <div className="col-md-6">
-                    <input type="email" className='form-control' placeholder='Email' />
-                  </div>
-                  <div className="col">
-                    <input type="text" className='form-control' placeholder='Subject' />
-                  </div>
-                  <div className='col-12'>
-                    <textarea className='form-control' placeholder='Message' style={{minHeight:"150px"}}></textarea>
-                  </div>
-                  <div className="col-12">
-                    <button className="btn btn-outline-secondary text-center col-12">Submit</button>
-                  </div>
+                  <h3 className="gradient-text">Get in Touch</h3>
                 </div>
-              </form>
-            </div>
-            <div className="col-md-6 mt-5 mt-md-0" data-aos="zoom-in-left">
-              <div className="row g-4">
-                <div className="col-12">
-                  <h5>Ahmed</h5>
-                  <p>Front-End Developer</p>
-                </div>
-                <div className="col-12">
-                  <h5>Phone</h5>
-                  <p>+233 56 085 2513</p>
-                </div>
-                <div className="col-12">
-                  <h5>Email</h5>
-                  <p>ahmedboabae2@gmail.com</p>
-                </div>
-                <div className="col-12">
-                  <ul className='d-flex ms-0 ps-0 '>
-                    <li className='list-group-item me-3'><a href="https://x.com/_02ahmed" className='text-secondary'><FaTwitter fontSize={30} /></a></li>
-                    <li className='list-group-item ms-3 me-3'><a href="https://www.linkedin.com/in/ahmed-boabae/" className='text-secondary'><FaLinkedin fontSize={30}/></a></li>
-                    <li className='list-group-item ms-3 me-3'><a href="https://github.com/02-ahmed" className='text-secondary'><FaGithub fontSize={30}/></a></li>
-                  </ul>
+
+                <div className="contact-grid">
+                  <a
+                    href="mailto:ahmedboabae2@gmail.com"
+                    className="contact-item"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    <div className="contact-icon">
+                      <FaEnvelope />
+                    </div>
+                    <div className="contact-info">
+                      <h4>Email</h4>
+                      <p>ahmedboabae2@gmail.com</p>
+                    </div>
+                    <div className="contact-arrow">→</div>
+                  </a>
+
+                  <a
+                    href="https://github.com/02-ahmed"
+                    className="contact-item"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                  >
+                    <div className="contact-icon">
+                      <FaGithub />
+                    </div>
+                    <div className="contact-info">
+                      <h4>GitHub</h4>
+                      <p>Check out my code</p>
+                    </div>
+                    <div className="contact-arrow">→</div>
+                  </a>
+
+                  <a
+                    href="https://www.linkedin.com/in/ahmed-boabae/"
+                    className="contact-item"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                  >
+                    <div className="contact-icon">
+                      <FaLinkedin />
+                    </div>
+                    <div className="contact-info">
+                      <h4>LinkedIn</h4>
+                      <p>Let's connect professionally</p>
+                    </div>
+                    <div className="contact-arrow">→</div>
+                  </a>
+
+                  <a
+                    href="https://x.com/_02ahmed"
+                    className="contact-item"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                  >
+                    <div className="contact-icon">
+                      <FaTwitter />
+                    </div>
+                    <div className="contact-info">
+                      <h4>Twitter</h4>
+                      <p>Follow my journey</p>
+                    </div>
+                    <div className="contact-arrow">→</div>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </>
-  )
-}
+      </div>
+    </section>
+  );
+};
 
-export default Contact
+export default Contact;
